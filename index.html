@@ -21,13 +21,13 @@
 
         /* Hero Section */
         .hero {
-            min-height: 100vh;
+            min-height: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 20px 20px 20px;
             background: radial-gradient(ellipse at center, rgba(75, 85, 169, 0.2) 0%, transparent 70%);
             position: relative;
         }
@@ -46,7 +46,7 @@
         }
 
         .logo-container {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             animation: glow 3s ease-in-out infinite;
         }
 
@@ -56,13 +56,13 @@
         }
 
         .logo-container img {
-            max-width: 400px;
+            max-width: 250px;
             width: 90%;
             height: auto;
         }
 
         h1 {
-            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-size: clamp(1.8rem, 6vw, 3.5rem);
             font-weight: 900;
             background: linear-gradient(135deg, #4b55a9 0%, #8b5cf6 25%, #ec4899 50%, #fbbf24 75%, #4b55a9 100%);
             background-size: 300% 300%;
@@ -70,7 +70,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             animation: gradientShift 8s ease infinite;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
@@ -81,8 +81,8 @@
         }
 
         .tagline {
-            font-size: clamp(1.2rem, 4vw, 2rem);
-            margin-bottom: 40px;
+            font-size: clamp(1rem, 3vw, 1.4rem);
+            margin-bottom: 30px;
             color: #c0c0c0;
             font-weight: 300;
             letter-spacing: 1px;
@@ -253,7 +253,7 @@
         <p class="tagline">Join the future of cryptocurrency growth</p>
         
         <!-- Main Hero Video -->
-        <div class="video-section" style="margin-top: 60px;">
+        <div class="video-section" style="margin-top: 0px; max-width: 900px;">
             <div class="video-container" id="video1">
                 <iframe src="https://player.vimeo.com/video/1209338669" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" allowfullscreen title="XAB Club Video"></iframe>
             </div>
