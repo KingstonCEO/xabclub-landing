@@ -209,6 +209,35 @@
             transform: translateY(-2px) scale(1.02);
         }
 
+        .cta-button-secondary {
+            display: inline-block;
+            padding: 18px 50px;
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
+            font-weight: 600;
+            text-decoration: none;
+            color: #fbbf24;
+            background: transparent;
+            border: 2px solid #fbbf24;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 20px;
+        }
+
+        .cta-button-secondary:hover {
+            background: rgba(251, 191, 36, 0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
         /* Footer */
         .footer {
             text-align: center;
@@ -272,7 +301,10 @@
     <section class="cta-section">
         <h2 class="cta-heading">Ready to Grow Your XRP?</h2>
         <p class="cta-text">Join thousands of members already growing their crypto portfolio with XAB Club. Don't miss out on this opportunity to maximize your XRP holdings.</p>
-        <a href="https://xabclub.com/signup?referer_id=gregsain" class="cta-button">Get Started Today</a>
+        <div class="cta-buttons">
+            <a href="https://xabclub.com/signup?referer_id=gregsain" class="cta-button">Get Started Today</a>
+            <a href="https://gregsain.com/xabclubcalc" class="cta-button-secondary">📊 See The Compound Calculator</a>
+        </div>
     </section>
 
     <!-- Footer -->
